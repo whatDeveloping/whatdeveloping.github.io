@@ -83,6 +83,16 @@ p{
 	gap: 30px;
 }
 
+.flex_between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex_between .logo{
+	height: 80px;
+	margin: 20px;
+}
 
 .sticky_menu .flex a{
 	cursor: pointer;
@@ -112,7 +122,7 @@ p{
 
 .box {
 	height: 100px;
-	width: 0;
+	width: 20%;
 	animation-name: wave;
 	animation-timing-function: ease-in-out;
 	animation-duration: 30s;
@@ -139,9 +149,9 @@ p{
 }
 
 @keyframes wave{
-	0% {width: 0;}
+	0% {width: 20%;}
 	50% {width: 100%;}
-	100% {width: 0;}
+	100% {width: 20%;}
 }
 
 .buttons_block{
@@ -157,34 +167,132 @@ p{
 
 .content .flex{
 	padding: 30px 0;
-	font-size: 24px;
 	justify-content: space-between;
-	gap: 50px;
+	gap: 15%;
+}
+
+.content .flex p{
+	font-size: 24px;
+	padding: 20px 0;
 }
 
 .content img{
-	width: 40%;
+	width: 45%;
 	border-radius: 10px;
 }
 
 /*footer styles*/
 .footer{
-	height: 800px;
+	height: 700px;
+	padding-top: 100px;
 	background-image: url(../footer.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 }
 .footer .inner{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
+	height: auto;
 }
-.footer .buttons_block{
-	margin-top: 0;
-	margin-left: 71px;
+
+.footer .double_lines{
+	overflow: hidden;
+	width: 100%;
+}
+/*
+.arrow_block{
+	width: 85px;
+	overflow: hidden;
+}
+
+
+@keyframes goingArrow{
+	0% {left: -24px;}
+	100% {left: 100%;}
+}
+
+.arrow{
+	position: relative;
+	height: 225px;
+	width: 40px;
+	transform: rotate(90deg);
+	left: -24px;
+
+	animation-name: goingArrow;
+	animation-timing-function: linear;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+	--s: 20px;
+	--c1: #bfa999;
+	--c2: #fff6ee;
+
+	--_g: 90deg,#0000 0;
+	background:
+			conic-gradient(from 135deg,var(--c1) var(--_g)) var(--s) calc(var(--s)/2),
+			conic-gradient(from 135deg,var(--c2) var(--_g)),
+			conic-gradient(from 135deg at 50% 0,var(--c1) var(--_g)) var(--c2);
+	background-size: calc(2*var(--s)) var(--s);
+}
+*/
+.footer .line{
+	height: 20px;
+	background:
+			radial-gradient(15.75px at 50% calc(100% + 8.25px),#0000 calc(99% - 4px), #fff6ee calc(101% - 4px) 99%,#0000 101%) calc(50% - 22px) calc(50% - 7.5px + .5px)/44px 15px repeat-x,
+			radial-gradient(15.75px at 50% -8.25px,#0000 calc(99% - 4px), #bfa999 calc(101% - 4px) 99%,#0000 101%) 50% calc(50% + 7.5px)/44px 15px repeat-x;
+
+}
+
+@keyframes goingLeft{
+	0% {left: -100%;}
+	50% {left: 0;}
+	100% {left: -100%;}
+}
+
+
+@keyframes goingRight{
+	0% {left: 0}
+	50% {left: -100%}
+	100% {left: 0}
+}
+
+.footer .flex{
+	justify-content: flex-start;
+	padding: 50px 0;
+}
+
+.footer .line:nth-child(1){
+	position: relative;
+/*	width: 200%;
+
+	animation-name: goingRight;
+	animation-timing-function: linear;
+	animation-duration: 80s;
+	animation-iteration-count: infinite;*/
+}
+
+.footer .line:nth-child(2){
+	position: relative;
+	/*left: -100%;
+	width: 200%;*/
+	transform: rotate(180deg);/*
+	animation-name: goingLeft;
+	animation-timing-function: linear;
+	animation-duration: 80s;
+	animation-iteration-count: infinite;*/
+}
+
+.amazon{
+	display: block;
+	border-radius: 20px;
+	background-color: #fff6ee;
+	height: 50px;
+	margin-top: 5px;
+}
+
+.amazon img{
+	height: 60px;
+}
+
+.amazon:hover{
+	background-color: #fff;
 }
