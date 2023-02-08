@@ -60,7 +60,7 @@ p{
 
 .header{
 	height: 800px;
-	background-image: url(../images/Main.jpg);
+	background-image: url(../Main.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -170,7 +170,7 @@ p{
 /*footer styles*/
 .footer{
 	height: 800px;
-	background-image: url(../images/footer.jpg);
+	background-image: url(../footer.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
