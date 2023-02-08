@@ -12,7 +12,7 @@ html {
 /* text */
 
 h1{
-	font-size: 72px;
+	font-size: 88px;
 	font-weight: bold;
 	color: #fff7f0;
 	border-bottom: 3px solid #ffeee1;
@@ -21,13 +21,13 @@ h1{
 
 h3{
 	color: #497925;
-	font-size: 36px;
+	font-size: 44px;
 	font-weight: bold;
 }
 h4{
 	color: #fff7f0;
 	margin-top: 5px;
-	font-size: 36px;
+	font-size: 44px;
 }
 p{
 	color: #497925;
@@ -98,7 +98,7 @@ p{
 
 .sticky_menu .flex a{
 	cursor: pointer;
-	font-size: 24px;
+	font-size: 26px;
 	animation-name: spin-border;
 	animation-timing-function: ease-in-out;
 	animation-duration: 1s;
@@ -116,45 +116,6 @@ p{
 }
 
 
-.animation{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.box {
-	height: 100px;
-	width: 20%;
-	animation-name: wave;
-	animation-timing-function: ease-in-out;
-	animation-duration: 30s;
-	animation-iteration-count: infinite;
-}
-
-.box_blue{
-	background:
-			radial-gradient(29.06px at 50% calc(100% + 17.85px),#0000 calc(99% - 3px), #3d3d58 calc(101% - 3px) 99%,#0000 101%) calc(50% - 42px) calc(50% - 12px + .5px)/84px 24px repeat-x,
-			radial-gradient(29.06px at 50% -17.85px,#0000 calc(99% - 3px), #d5d7cb calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 12px)/84px 24px repeat-x;
-}
-
-.box_red{
-	transform: rotate(180deg);
-	background:
-			radial-gradient(29.06px at 50% calc(100% + 17.85px),#0000 calc(99% - 3px), #7b4f50 calc(101% - 3px) 99%,#0000 101%) calc(50% - 42px) calc(50% - 12px + .5px)/84px 24px repeat-x,
-			radial-gradient(29.06px at 50% -17.85px,#0000 calc(99% - 3px), #d5d7cb calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 12px)/84px 24px repeat-x;
-}
-
-.box_green{
-	background:
-			radial-gradient(29.06px at 50% calc(100% + 17.85px),#0000 calc(99% - 3px), #727d5a calc(101% - 3px) 99%,#0000 101%) calc(50% - 42px) calc(50% - 12px + .5px)/84px 24px repeat-x,
-			radial-gradient(29.06px at 50% -17.85px,#0000 calc(99% - 3px), #d5d7cb calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 12px)/84px 24px repeat-x;
-}
-
-@keyframes wave{
-	0% {width: 20%;}
-	50% {width: 100%;}
-	100% {width: 20%;}
-}
 
 .buttons_block{
 	display: flex;
@@ -174,7 +135,7 @@ p{
 }
 
 .content .flex p{
-	font-size: 24px;
+	font-size: 26px;
 	padding: 20px 0;
 }
 
@@ -195,91 +156,10 @@ p{
 	height: auto;
 }
 
-.footer .double_lines{
-	overflow: hidden;
-	width: 100%;
-}
-/*
-.arrow_block{
-	width: 85px;
-	overflow: hidden;
-}
-
-
-@keyframes goingArrow{
-	0% {left: -24px;}
-	100% {left: 100%;}
-}
-
-.arrow{
-	position: relative;
-	height: 225px;
-	width: 40px;
-	transform: rotate(90deg);
-	left: -24px;
-
-	animation-name: goingArrow;
-	animation-timing-function: linear;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-
-	--s: 20px;
-	--c1: #bfa999;
-	--c2: #fff6ee;
-
-	--_g: 90deg,#0000 0;
-	background:
-			conic-gradient(from 135deg,var(--c1) var(--_g)) var(--s) calc(var(--s)/2),
-			conic-gradient(from 135deg,var(--c2) var(--_g)),
-			conic-gradient(from 135deg at 50% 0,var(--c1) var(--_g)) var(--c2);
-	background-size: calc(2*var(--s)) var(--s);
-}
-*/
-.footer .line{
-	height: 20px;
-	background:
-			radial-gradient(15.75px at 50% calc(100% + 8.25px),#0000 calc(99% - 4px), #fff6ee calc(101% - 4px) 99%,#0000 101%) calc(50% - 22px) calc(50% - 7.5px + .5px)/44px 15px repeat-x,
-			radial-gradient(15.75px at 50% -8.25px,#0000 calc(99% - 4px), #bfa999 calc(101% - 4px) 99%,#0000 101%) 50% calc(50% + 7.5px)/44px 15px repeat-x;
-
-}
-
-@keyframes goingLeft{
-	0% {left: -100%;}
-	50% {left: 0;}
-	100% {left: -100%;}
-}
-
-
-@keyframes goingRight{
-	0% {left: 0}
-	50% {left: -100%}
-	100% {left: 0}
-}
 
 .footer .flex{
 	justify-content: flex-start;
 	padding: 50px 0;
-}
-
-.footer .line:nth-child(1){
-	position: relative;
-/*	width: 200%;
-
-	animation-name: goingRight;
-	animation-timing-function: linear;
-	animation-duration: 80s;
-	animation-iteration-count: infinite;*/
-}
-
-.footer .line:nth-child(2){
-	position: relative;
-	/*left: -100%;
-	width: 200%;*/
-	transform: rotate(180deg);/*
-	animation-name: goingLeft;
-	animation-timing-function: linear;
-	animation-duration: 80s;
-	animation-iteration-count: infinite;*/
 }
 
 .amazon{
