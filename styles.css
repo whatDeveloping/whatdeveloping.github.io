@@ -294,3 +294,54 @@ p{
 .all-rights{
 	background-color: #fff6ee;
 }
+
+@media screen and (max-width: 980px) {
+	.header, .footer{
+		background-attachment: inherit;
+	}
+	.sticky_menu .flex_around a{
+		font-size: 38px;
+	}
+	h1{
+		border-bottom-width: 6px;
+		font-size: 116px;
+	}
+	h4{
+		font-size: 50px;
+	}
+	.all-rights{
+		font-size: 24px;
+	}
+	.header h4{
+		width: 98%;
+	}
+	.content h3{
+		font-size: 60px;
+	}
+	.content .flex p{
+		font-size: 44px;
+	}
+	.content .flex{
+		flex-direction: column;
+	}
+	.content .flex:nth-child(4n){
+		flex-direction: column-reverse;
+	}
+	.content .flex img{
+		width: 100%;
+	}
+	.buy-modal{
+		height: max(20%, 300px);
+		top: 40%;
+	}
+	.buy-button, .buy-button img{
+		width: 75px;
+		height: 75px;
+	}
+	.close-button{
+		top: 0;
+	}
+	.footer .flex{
+		gap: 10px;
+	}
+}
