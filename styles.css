@@ -296,18 +296,18 @@ p{
 }
 
 @media screen and (max-width: 980px) {
+	.header{
+		height: 1250px;
+	}
 	.header, .footer{
 		background-attachment: inherit;
-	}
-	.sticky_menu .flex_around a{
-		font-size: 38px;
 	}
 	h1{
 		border-bottom-width: 6px;
 		font-size: 116px;
 	}
 	h4{
-		font-size: 50px;
+		font-size: 55px;
 	}
 	.all-rights{
 		font-size: 24px;
@@ -316,10 +316,10 @@ p{
 		width: 98%;
 	}
 	.content h3{
-		font-size: 60px;
+		font-size: 75px;
 	}
-	.content .flex p{
-		font-size: 44px;
+	.content .flex p, .sticky_menu .flex_around a{
+		font-size: 45px;
 	}
 	.content .flex{
 		flex-direction: column;
@@ -341,7 +341,18 @@ p{
 	.close-button{
 		top: 0;
 	}
+	.footer .inner{
+		width: 95%;
+	}
 	.footer .flex{
-		gap: 10px;
+		gap: 20px;
+	}
+	.footer h4{
+		font-size: 50px;
+		justify-content: flex-end;
+	}
+	.footer{
+		background-position: -950px;
+		height: 1200px;
 	}
 }
