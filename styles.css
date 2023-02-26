@@ -378,13 +378,46 @@ p{
 		top: 0;
 	}
 	.footer .inner{
-		width: 95%;
+		width: 96%;
 	}
 	.footer .flex{
 		gap: 20px;
 	}
 	.footer h4{
-		font-size: 50px;
+		font-size: 51px;
+		text-shadow:
+				-0   -3px 1px #497925,
+				0   -3px 1px #497925,
+				-0    3px 1px #497925,
+				0    3px 1px #497925,
+				-3px -0   1px #497925,
+				3px -0   1px #497925,
+				-3px  0   1px #497925,
+				3px  0   1px #497925,
+				-1px -3px 1px #497925,
+				1px -3px 1px #497925,
+				-1px  3px 1px #497925,
+				1px  3px 1px #497925,
+				-3px -1px 1px #497925,
+				3px -1px 1px #497925,
+				-3px  1px 1px #497925,
+				3px  1px 1px #497925,
+				-2px -3px 1px #497925,
+				2px -3px 1px #497925,
+				-2px  3px 1px #497925,
+				2px  3px 1px #497925,
+				-3px -2px 1px #497925,
+				3px -2px 1px #497925,
+				-3px  2px 1px #497925,
+				3px  2px 1px #497925,
+				-3px -3px 1px #497925,
+				3px -3px 1px #497925,
+				-3px  3px 1px #497925,
+				3px  3px 1px #497925,
+				-3px -3px 1px #497925,
+				3px -3px 1px #497925,
+				-3px  3px 1px #497925,
+				3px  3px 1px #497925;
 		justify-content: flex-end;
 	}
 	.footer{
