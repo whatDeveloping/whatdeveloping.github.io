@@ -20,7 +20,40 @@ h1{
 	font-size: 88px;
 	font-weight: bold;
 	color: #fff7f0;
-	border-bottom: 3px solid #ffeee1;
+	border-bottom: 3px solid #fff7f0;
+	text-shadow:
+			-0   -3px 1px #497925,
+			0   -3px 1px #497925,
+			-0    3px 1px #497925,
+			0    3px 1px #497925,
+			-3px -0   1px #497925,
+			3px -0   1px #497925,
+			-3px  0   1px #497925,
+			3px  0   1px #497925,
+			-1px -3px 1px #497925,
+			1px -3px 1px #497925,
+			-1px  3px 1px #497925,
+			1px  3px 1px #497925,
+			-3px -1px 1px #497925,
+			3px -1px 1px #497925,
+			-3px  1px 1px #497925,
+			3px  1px 1px #497925,
+			-2px -3px 1px #497925,
+			2px -3px 1px #497925,
+			-2px  3px 1px #497925,
+			2px  3px 1px #497925,
+			-3px -2px 1px #497925,
+			3px -2px 1px #497925,
+			-3px  2px 1px #497925,
+			3px  2px 1px #497925,
+			-3px -3px 1px #497925,
+			3px -3px 1px #497925,
+			-3px  3px 1px #497925,
+			3px  3px 1px #497925,
+			-3px -3px 1px #497925,
+			3px -3px 1px #497925,
+			-3px  3px 1px #497925,
+			3px  3px 1px #497925;
 	border-radius: 3px;
 }
 
@@ -302,6 +335,9 @@ p{
 	.header, .footer{
 		background-attachment: inherit;
 	}
+	.sticky_menu{
+		display: none;
+	}
 	h1{
 		border-bottom-width: 6px;
 		font-size: 116px;
@@ -318,7 +354,7 @@ p{
 	.content h3{
 		font-size: 75px;
 	}
-	.content .flex p, .sticky_menu .flex_around a{
+	.content .flex p{
 		font-size: 45px;
 	}
 	.content .flex{
