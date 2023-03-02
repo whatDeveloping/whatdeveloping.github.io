@@ -290,6 +290,11 @@ p{
 	color: #497925;
 	font-size: 80px;
 	cursor: pointer;
+	transition: .3s;
+}
+
+.close-button:hover{
+	color: rgba(73, 121, 37, 0.8);
 }
 
 .buy-modal{
