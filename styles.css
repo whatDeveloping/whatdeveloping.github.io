@@ -192,7 +192,7 @@ p{
 }
 
 .amazon:hover{
-	border-radius: 10px;
+	border-radius: 16px;
 	background-color: rgba(255, 255, 255, 0.75);
 }
 
@@ -295,6 +295,10 @@ p{
 
 .close-button:hover{
 	color: rgba(73, 121, 37, 0.8);
+}
+
+.close-button:hover ~ .amazon{
+	background-color: #f8bf96;
 }
 
 .buy-modal{
